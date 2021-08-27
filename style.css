@@ -1,0 +1,92 @@
+:root{
+    --dark-clr: #333;
+    --light-clr: #fafafa;
+    --bkg-clr: #c9510c;
+    --bkg-shadows: hsl(22, 89%, 62%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    border: 2px solid var(--dark-clr);
+    background-color: var(--bkg-clr);
+    padding: 10px 0;
+    box-shadow: inset .3em .3em .1em var(--bkg-shadows), inset -.3em -.3em .1em var(--bkg-shadows);
+    text-align: center;
+}
+
+.site-name{
+    color: #fafafa;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+main{
+    border-right: 2px solid var(--dark-clr);
+    border-left: 2px solid var(--dark-clr);
+    padding: 10px;
+    background-color: var(--light-clr);
+}
+
+p{
+    margin: 2px 0;
+    text-align: justify;
+}
+
+main a{
+    text-decoration: none;
+    color: #4078c0;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+code{font-size: 1rem;}
+
+dt{font-weight: bold; font-style: italic;}
+dd{border-bottom: 1px solid var(--dark-clr); text-align: justify;}
+
+table, th, td{
+    border: 2px ridge var(--dark-clr);
+    border-collapse: collapse;
+}
+table{margin: 10px auto;}
+th{
+    background-color: var(--bkg-clr); 
+    color: var(--light-clr);
+    text-transform: uppercase;
+    padding: 6px;
+}
+td{background-color: #fafafa; padding: 6px;}
+td:nth-child(1){text-align: center;}
+
+.git-command{
+    font-weight: bold;
+}
+
+.git-command__placeholder{
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+.git-command__undefined{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+footer a{
+    color: var(--light-clr);
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0 4px;
+}
+
+footer a:hover{
+    background-color: var(--light-clr);
+    color: var(--bkg-clr);
+    transition: .6s;
+}
