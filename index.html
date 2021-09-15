@@ -21,7 +21,7 @@
         </div>
         <h1>What Is Git?</h1>
         <p>
-            Git is a versioning system that saves the changes of a repository on a separated one through commits which
+            Git is a versioning system that saves the changes of a repository in a separated one through commits which
             work as snapshots of a piece of code.
         </p>
         <p>
@@ -30,21 +30,18 @@
         </p>
         <h2>Why Git?</h2>
         <p>
-            Because every programmer use it, and you must use it too, is like a standar on code versioning and on coding
-            as a whole.
-        </p>
-        <p>
-            And also because <strong>Git is good</strong> and Mr. Torvalds is clever than your entire family tree.
+            Because every programmer use it, and you must use it too, is like a standard in code versioning and also
+            because <strong>Git is good</strong> and Mr. Torvalds is clever than your entire family tree.
         </p>
         <h1>How Does Git Work?</h1>
         <p>
             As far as I understood git works in a very peculiar way compared to other versioning system, instead of
-            saving files to save the changes of a code and turning development a mess, git doesn't save the changes on
-            files but in commits which are similar to screenshots you oftenly take on your PC.
+            saving files to save the changes of a code and turning development a mess, git doesn't save the changes on the
+            files but in commits which are similar to screenshots you often take on your PC.
         </p>
         <p>
-            Git creates a special repository called .git on the directory you selected to 'host' that repository. This
-            repo saves the changes you make through commands you give in the Git BASH or via terminal.
+            Git creates a special repository called .git in the directory you selected to 'host' that repository. This
+            repo saves the changes you've made through commands you give in the Git BASH or via terminal.
         </p>
         <h2>Starting Git</h2>
         <p>
@@ -76,7 +73,9 @@
             <dd>Kind of obvious but a repo is an abbreviation for repository and a repository is a place where you store
                 things, in this case files and folders.</dd>
             <dt>Gitignore</dt>
-            <dd>This is a file you can create on your <strong>master</strong> branch that will ignore untracked files you indicate there. See <a href="https://git-scm.com/docs/gitignore/#_pattern_format">the docs about gitignore</a>.</dd>
+            <dd>This is a file you can create on your <strong>master</strong> branch that will ignore untracked files
+                you indicate there. See <a href="https://git-scm.com/docs/gitignore/#_pattern_format">the docs about
+                    gitignore</a>.</dd>
             <dt>Push</dt>
             <dd>Push is actually a git command (<code>$ git push</code>) which enables you to... push a local repository
                 (one in your PC) to a remote one on GitHub.</dd>
@@ -87,13 +86,14 @@
         <h1>Really Using it</h1>
         <p>
             Now to really use it you should open your repository create a file (if you didn't do it yet) and write
-            something, to identify what you did as a change you must write <code>$ git add -A</code> in BASH and to "send
-            it" to the branch you are (by) you must write
+            something, to identify what you did as a change you must write <code>$ git add -A</code> in BASH and to
+            "send it" to the branch you are (by) you must write
             <code>$ git commit -m "<i>some message explaining what you did</i>"</code>, so simple as that.
         </p>
         <p>
             To create a new branch write: <code>$ git branch <i>branchName</i></code>. To see it write:
-            <code>$ git branch</code> and the branch you are currently in will apear brither and with a <strong>*</strong>
+            <code>$ git branch</code> and the branch you are currently in will apear brither and with a
+            <strong>*</strong>
             before it. To move right to the branch you created write: <code>$ git checkout branchYouWant</code>.
         </p>
         <h2>Main Commands On Local Repositories</h2>
@@ -108,47 +108,55 @@
             <tbody>
                 <tr>
                     <td><code class="git-command">git add -A</code></td>
-                    <td>Adds all the changes made on the repository to git but without moving them to the branch.</td>
+                    <td>Adds all the changes made in the repository to the branch you're working in.</td>
                 </tr>
                 <tr>
                     <td><code
                             class="git-command">git commit -m "<span class="git-command__placeholder">some message</span>"</code>
                     </td>
-                    <td>Commits the changes that were added to the repo.</td>
+                    <td>Commits the changes you've made with a message explaining what was done</td>
                 </tr>
                 <tr>
                     <td><code
                             class="git-command">git commit -am "<span class="git-command__placeholder">some message</span>"</code>
                     </td>
-                    <td>Adds and commits all the changes made on your code.</td>
+                    <td>This is similar to the previous, the difference is the -a before the m (message). It will commit all the changes made in the files that were already tracked without the need to add them with <code class="git-command">git add -A</code></td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git status</code></td>
-                    <td>Shows the status of the changes in the files, shows the changes which weren't added to the branch, those which weren't and also if there is no change remaining to add</td>
+                    <td>Shows the status of the changes in the files, shows the changes that weren't added to the
+                        branch, those which were added but not committed yet and also will show a message if there's nothing to add</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git log</code></td>
-                    <td>Shows all the commits of a branch</td>
+                    <td>Shows all the commits of a branch, the author of them, the date when they were committed and the message that was left for each one of them.</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git branch</code></td>
-                    <td>Shows all the branches you created and marks the one you are.</td>
+                    <td>Shows all the branches you've created and marks with "*"" the one you are.</td>
                 </tr>
                 <tr>
-                    <td><code class="git-command">git branch -m <span class="git-command__undefined">currentBranchName</span> <span class="git-command__undefined">newBranchName</span></code></td>
+                    <td><code
+                            class="git-command">git branch -m <span class="git-command__undefined">currentBranchName</span> <span class="git-command__undefined">newBranchName</span></code>
+                    </td>
                     <td>Renames the current branch to a new one.</td>
                 </tr>
                 <tr>
-                    <td><code class="git-command">git branch -D <span class="git-command__undefined">branchName</span></code></td>
+                    <td><code
+                            class="git-command">git branch -D <span class="git-command__undefined">branchName</span></code>
+                    </td>
                     <td>Deletes the indicated branch</td>
                 </tr>
                 <tr>
-                    <td><code class="git-command">git checkout <span class="git-command__undefined">branchName</span></code></td>
+                    <td><code
+                            class="git-command">git checkout <span class="git-command__undefined">branchName</span></code>
+                    </td>
                     <td>Goes to the indicated branch</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git reset --soft</code></td>
-                    <td>The most recent commit fades but the code does not change and all the changes were still added, but not commited.</td>
+                    <td>The most recent commit fades but the code does not change and all the changes were still added,
+                        but not commited.</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git reset --mixed</code></td>
@@ -163,12 +171,17 @@
                     <td>Shows all the changes of all the files.</td>
                 </tr>
                 <tr>
-                    <td><code class="git-command">git diff <span class="git-command__placeholder">somefile.ext</span></code></td>
+                    <td><code
+                            class="git-command">git diff <span class="git-command__placeholder">somefile.ext</span></code>
+                    </td>
                     <td>Shows all the changes on the indicated file.</td>
                 </tr>
                 <tr>
-                    <td><code class="git-command">git revert --no-edit <span class="git-command__placehlder">commitCode</span></code></td>
-                    <td>Creates a new commit without the changes made on the previous one. You have to write git log before and copy the commit code you want to revert.</td>
+                    <td><code
+                            class="git-command">git revert --no-edit <span class="git-command__placeholder">commitCode</span></code>
+                    </td>
+                    <td>Creates a new commit without the changes made on the previous one. You have to write git log
+                        before and copy the commit code you want to revert to.</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">rm -rf .git</code></td>
@@ -178,7 +191,8 @@
         </table>
         <!--I will add one more table to commands on remote repos-->
         <p>
-            If you want to explore more git content see <a href="https://git-scm.com/docs">the official documentation</a>.
+            If you want to explore more git content see <a href="https://git-scm.com/docs">the official
+                documentation</a>.
         </p>
     </main>
     <footer>
