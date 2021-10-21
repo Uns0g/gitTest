@@ -36,7 +36,8 @@
         <h1>How Does Git Work?</h1>
         <p>
             As far as I understood git works in a very peculiar way compared to other versioning system, instead of
-            saving files to save the changes of a code and turning development a mess, git doesn't save the changes on the
+            saving files to save the changes of a code and turning development a mess, git doesn't save the changes on
+            the
             files but in commits which are similar to screenshots you often take on your PC.
         </p>
         <p>
@@ -120,16 +121,21 @@
                     <td><code
                             class="git-command">git commit -am "<span class="git-command__placeholder">some message</span>"</code>
                     </td>
-                    <td>This is similar to the previous, the difference is the -a before the m (message). It will commit all the changes made in the files that were already tracked without the need to add them with <code class="git-command">git add -A</code></td>
+                    <td>This is similar to the previous, the difference is the -a before the m (message). It will commit
+                        all the changes made in the files that were already tracked without the need to add them with
+                        <code class="git-command">git add -A</code>
+                    </td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git status</code></td>
                     <td>Shows the status of the changes in the files, shows the changes that weren't added to the
-                        branch, those which were added but not committed yet and also will show a message if there's nothing to add</td>
+                        branch, those which were added but not committed yet and also will show a message if there's
+                        nothing to add</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git log</code></td>
-                    <td>Shows all the commits of a branch, the author of them, the date when they were committed and the message that was left for each one of them.</td>
+                    <td>Shows all the commits of a branch, the author of them, the date when they were committed and the
+                        message that was left for each one of them.</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">git branch</code></td>
@@ -186,6 +192,44 @@
                 <tr>
                     <td><code class="git-command">rm -rf .git</code></td>
                     <td>Removes the .git repository of the folder you are currently in.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Remote repos</h1>
+        <p>But the coolest thing to do with git is to create a remote repository for others to access and see your work
+            and in order to do this you'll need to create a remote repository in the most famous git repos collection of
+            the universe, the GitHub.</p>
+        <p>
+            The remote will work as a... remote, another repository of the same in your machine. And everything done in
+            the remote will not go to the local unless you give a pull, and everything done in the local will not go to
+            the remote unless you give a push.
+        </p>
+        <h2>Commands to remote</h2>
+        <table>
+            <thead>
+                <th>Commands</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>git remote add <span class="git-command__undefined">remoteName</span> <span class="git-command__placeholder">linkOfTheRemote</span></td>
+                    <td>This command will create a new remote repository in the indicated link</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
