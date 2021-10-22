@@ -184,14 +184,14 @@
                 </tr>
                 <tr>
                     <td><code
-                            class="git-command">git revert --no-edit <span class="git-command__placeholder">commitCode</span></code>
+                            class="git-command">git revert --no-edit <span class="git-command__placeholder">c0|\/|M1tC0d3</span></code>
                     </td>
                     <td>Creates a new commit without the changes made on the previous one. You have to write git log
                         before and copy the commit code you want to revert to.</td>
                 </tr>
                 <tr>
                     <td><code class="git-command">rm -rf .git</code></td>
-                    <td>Removes the .git repository of the folder you are currently in.</td>
+                    <td>Removes forcibly the .git repository of the folder you are currently in.</td>
                 </tr>
             </tbody>
         </table>
@@ -212,24 +212,32 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>git remote add <span class="git-command__undefined">remoteName</span> <span class="git-command__placeholder">linkOfTheRemote</span></td>
-                    <td>This command will create a new remote repository in the indicated link</td>
+                    <td><code class="git-command">git remote add <span class="git-command__undefined">remoteName</span> <span class="git-command__placeholder">url://link/Of/The-Remote</span></code></td>
+                    <td>Create a new remote repository in the indicated link.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td><code class="git-command">git remote</code></td>
+                    <td>See all the remotes you have.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td><code class="git-command">git remote rename <span class="git-command__undefined">oldRemoteName</span> <span class="git-command__undefined">newRemoteName</span></code></td>
+                    <td>Renames the remote repository.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td><code class="git-command">git remote remove <span class="git-command__undefined">remoteName</span></code></td>
+                    <td>Removes the remote repository. Can be reduced to <code class="git-command">git remote rm <span class="git-command__undefined">remoteName</span></code>.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td><code class="git-command">git push -u <span class="git-command__undefined">remoteName</span> <span class="git-command__undefined">branchName</span></code></td>
+                    <td>Pushes the indicated branch to the remote, replacing the content of the master/main branch of the remote by the one of the local branch.</td>
+                </tr>
+                <tr>
+                    <td><code class="git-command">git push <span class="git-command__undefined">remoteName</span> <span class="git-command__undefined">branchName</span></code></td>
+                    <td>Creates a new branch on the remote repo with the content of the indicated branch.</td>
+                </tr>
+                <tr>
+                    <td><code class="git-command">git pull <span class="git-command__undefined">remoteName</span> <span class="git-command__undefined">branchName</span></code></td>
+                    <td>Pulls what is in a remote branch to a local branch.</td>
                 </tr>
             </tbody>
         </table>
